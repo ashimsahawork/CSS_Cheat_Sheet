@@ -1,7 +1,5 @@
 # CSS Cheat Sheet
 
----
-
 ## Overview:
 This repository contains a comprehensive CSS Cheat Sheet designed to aid developers in quickly referencing and understanding various CSS properties, selectors, and techniques. Whether you're a beginner learning CSS or an experienced developer looking for a quick reference, this cheat sheet provides organized and detailed information to enhance your CSS skills.
 
