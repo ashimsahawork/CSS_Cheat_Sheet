@@ -1,0 +1,59 @@
+# CSS Crash Course for Absolute Beginners
+
+# Before we begin:
+    - This course is designed for absolute beginners.
+    - It's a continuation of my HTML crash course. If you're not familiar with HTML, I recommend learning that first.
+
+# What is CSS?
+    - CSS, or Cascading Style Sheets, is a style sheet language used for website layout and design.
+    - It's not a programming language, but it can be extended with CSS preprocessor like Sass (Syntactically Awesome Style Sheets) and Less (Leaner CSS). These preprocessor introduce features such as variables, functions, mixins, and nesting, making it easier to write and maintain CSS code, especially for large projects.
+
+## Recommended Code Editors
+    - Visual Studio Code
+    - Sublime Text
+    - Atom.io 
+    - Notepad++ (Windows)
+    - TextMate (Mac)
+
+## Recommended Browsers
+    - Google Chrome
+    - Mozilla Firefox
+    - Microsoft Edge
+
+## How to Add CSS to an HTML File
+    There are three main ways to add CSS to an HTML file:
+    1. **Inline CSS**: Directly in the HTML element (not recommended).
+    2. **Internal CSS**: Using '<style>' tags within a single document under the '<head>' tag.
+    3. **External CSS**: Linking an external '.css' file with an '.html' file (most recommended).
+
+## Colors in CSS
+    Colors in CSS can be defined using:
+    - Color names
+    - HTML5 color names
+    - Hexadecimal codes
+    - RGB values
+
+Example:
+
+    body {
+        color: red;
+        background: green;
+    }
+    h1 {
+        color: #000000;
+    }
+    p {
+        color: rgb(0,0,238);
+    }
+
+
+## Positioning in CSS
+    CSS offers several methods for positioning elements:
+    - **Static**: The default positioning.
+    - **Relative**: The element is positioned relative to its normal position.
+    - **Absolute**: Allows us to target any position we want inside of a relative element.
+    - **Fixed**: Positions the element relative to the browser window.
+    - **Initial**: Sets the property to its default value.
+    - **Inherit**: Inherits the property from the parent element.
+
+Congratulations, you're ready to start! Follow along with 'index.html' & 'style.css'.

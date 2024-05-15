@@ -1,0 +1,262 @@
+/* 
+    Choosing '*' as a selector means we are selecting every element.
+*{
+    margin: 0;
+    padding: 0;
+} 
+*/
+
+body {
+    color: #0c0c0c;
+    background-color: #e8e2e2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    /* 
+    Shorter way to do the same thing by combining font-size, font-weight, and font-family together.
+    font: 16px normal Arial, Arial, Helvetica, sans-serif;
+    */
+    line-height: 1.6em;
+}
+
+p {
+    /*While overriding, the latest one will always be updated. For example:
+    background-color: green;
+    background-color: blue;
+    background-color: red;
+    - In this example 'red' will be excepted hence the 'background-color' becomes 'red'.*/
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    /* Shorter syntax by combining all margins in the following order : top, right, bottom, left */
+    margin: 5px 10px 5px 10px;
+    /* Much shorter Syntax by combining all margins in the following order : first parameter for top and bottom, and second parameter for left and right. Only applicable, when top == bottom & right == left */
+    margin: 5px 10px;
+}
+
+/* Apply global style to the link */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Hover state */
+a:hover {
+    color: blue;
+}
+
+/* Active state */
+a:active {
+    color: green;
+}
+
+/* Visited state */
+a:visited {
+    color: orange;
+}
+
+.container {
+    width: 500px;
+    /* use % to achieve responsiveness */
+    width: 80%; /*Here we are overriding. So, this one will be selected finally*/
+    margin: auto;
+}
+
+.button {
+    background-color: #0c0c0c;
+    color: #e8e2e2;
+    /* Shorter Syntax by combining all paddings in the following order : first parameter for top and bottom, and second parameter for left and right. Only applicable, when top == bottom & right == left */
+    padding: 10px 15px;
+    border: none;
+}
+
+/* This is how we can access our element one step farther by introducing type attribute.
+.button[type="submit"]{
+    background-color: #0c0c0c;
+    color: #e8e2e2;
+    padding: 10px 15px;
+    border: none;
+} 
+*/
+
+.button:hover {
+    background: red;
+    color: white;
+}
+
+/* It's a global class, topically used after applying float attribute to clear the space beneath.*/
+.clr {
+    clear: both;
+}
+
+.section-1 {
+    background-color: #141415;
+    color: #f9f6f6;
+    /*Applicable if we need different size of border*/
+    border-top: 5px solid yellow;
+    border-right: 5px solid yellow;
+    border-bottom: 5px solid yellow;
+    border-left: 5px solid yellow;
+    /*Shorter Syntax by combining all borders - top, right, bottom, left.*/
+    border: 5px solid yellow;
+    /*Overriding*/
+    border-width: 3px;
+    border-top-width: 10px;
+    /* border-bottom-style: dotted; */
+    /*Applicable if we need different size of padding*/
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    /*Shorter Syntax by combining all padding - top, right, bottom, left. Applicable, if we need same size of padding.*/
+    padding: 50px;
+    /*Applicable if we need different size of margin*/
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    /* Shorter Syntax by combining all margins in the following order : first parameter for top and bottom, and second parameter for left and right. Only applicable, when top == bottom & right == left */
+    margin: 20px 0px;   /*Here we are overriding. So, this one will be selected finally*/
+}
+
+.section-1 h1 {
+    /* Text formatting style: */
+    font-family: 'Segoe UI';
+    /* font-weight: lighter; */
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    /* word-spacing: 1em; */
+}
+
+.section-2 {
+    border: 3px dotted red;
+    padding: 30px;
+    margin: 30px 0px;
+}
+
+.categories {
+    border: 1px solid gray;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0;
+    padding-left: 20px;
+    list-style: none;
+
+}
+
+.categories li {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted black;
+    list-style-image: url('../images/image-one.png');
+}
+
+.my-form {
+    border: 1px solid gray;
+    margin: 1em 0em;
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea {
+    padding: 10px;
+    width: 98%;
+}
+
+.block {
+    float: left;
+    width: 33.3%;
+    border: 1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#floating-element{
+    border: 1px solid gray;
+    background: black;
+    color: white;
+    margin: 1em 0em;
+    padding: 0em 1em;
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.p-box {
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 1em;
+    position: relative;
+    background-image: url(../images/background-image.jpg);
+    background-position: 100px 200px;
+    /* background-position: center center;
+    background-position: center top; */
+    background-repeat: no-repeat;
+}
+
+.p-box h1 {
+    /*If we make the position 'absolute', the the parent must be responsive. Ex: position of 'p-box' os responsive*/
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2 {
+    /*If we make the position 'absolute', the the parent must be responsive. Ex: position of 'p-box' os responsive*/
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+}
+
+.fix-me {
+    position: fixed;
+    top: 400px;
+}
+
+/*CSS Pseudo-classes*/
+.my-list li:first-child {
+    background: green;
+}
+
+.my-list li:last-child {
+    background: Blue;
+}
+
+.my-list li:nth-child(8) {
+    background: red;
+}
+
+.my-list li:nth-child(even) {
+    background: rgb(236, 234, 234);
+}
+
+.my-list li:nth-child(odd) {
+    background: rgb(70, 235, 210);
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+
+    <!--
+        # Internal CSS:
+        ---------------
+        <style type="text/css">
+        h1{
+        color:blue;
+        }
+        </style>
+    -->
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--
+        # Inline CSS (Not Recommended):
+        -------------------------------
+        <h1 style="color:red">Hello World</h1>
+    -->
+    <div class="container">
+        <div class="section-1">
+            <h1>Section One</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe soluta dolore officia fuga quos
+                cupiditate
+                accusantium numquam, reprehenderit, consequatur itaque provident dicta tempore suscipit dolorem a
+                voluptates
+                est quidem ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe soluta dolore officia
+                fuga
+                quos cupiditate
+                accusantium numquam, reprehenderit, consequatur itaque provident dicta tempore suscipit dolorem a
+                voluptates
+                est quidem ipsam.
+            </p>
+        </div>
+
+        <div class="section-2">
+            <h1>Section Two</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe soluta dolore officia fuga quos
+                cupiditate
+                accusantium numquam, reprehenderit, consequatur itaque provident dicta tempore suscipit dolorem a
+                voluptates
+                est quidem ipsam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe soluta dolore officia
+                fuga
+                quos cupiditate
+                accusantium numquam, reprehenderit, consequatur itaque provident dicta tempore suscipit dolorem a
+                voluptates
+                est quidem ipsam.
+            </p>
+        </div>
+        <div class="categories">
+            <h2>Categories</h2>
+            <!-- List -->
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+                <li><a href="#">Category 4</a></li>
+                <li><a href="about.html">Category 5</a></li>
+            </ul>
+        </div>
+
+        <!-- Form -->
+        <form class="my-form">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="text" name="email">
+            </div>
+            <div class="form-group">
+                <label>Message:</label>
+                <textarea name="message"></textarea>
+            </div>
+            <input class="button" type="submit" value="Submit" name="">
+        </form>
+
+
+        <!--CSS Block-->
+        <div class="block">
+            <h1>Headline</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sed repudiandae aspernatur,
+                voluptatem quis provident, veritatis, molestiae molestias dolor odio animi! Culpa praesentium voluptatum
+                nam? Temporibus cumque veritatis aut necessitatibus maiores maxime consequatur porro illum vitae ut,
+                esse dolorum ex quae cupiditate, perferendis id atque, facilis voluptas molestiae nesciunt. Architecto
+                assumenda dolores perferendis, debitis quisquam molestias quod porro neque numquam totam animi? Nihil
+                deleniti dolorum perspiciatis voluptatum, tempora illo voluptates, quam, voluptate optio reprehenderit
+                dolor impedit illum nam odit vel modi ad. Nobis error, nemo voluptates laudantium iure sunt aperiam
+                doloremque nulla dolor, at porro neque? Consectetur quis voluptatibus saepe?</p>
+        </div>
+        <div class="block">
+            <h1>Headline</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sed repudiandae aspernatur,
+                voluptatem quis provident, veritatis, molestiae molestias dolor odio animi! Culpa praesentium voluptatum
+                nam? Temporibus cumque veritatis aut necessitatibus maiores maxime consequatur porro illum vitae ut,
+                esse dolorum ex quae cupiditate, perferendis id atque, facilis voluptas molestiae nesciunt. Architecto
+                assumenda dolores perferendis, debitis quisquam molestias quod porro neque numquam totam animi? Nihil
+                deleniti dolorum perspiciatis voluptatum, tempora illo voluptates, quam, voluptate optio reprehenderit
+                dolor impedit illum nam odit vel modi ad. Nobis error, nemo voluptates laudantium iure sunt aperiam
+                doloremque nulla dolor, at porro neque? Consectetur quis voluptatibus saepe?</p>
+        </div>
+        <div class="block">
+            <h1>Headline</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sed repudiandae aspernatur,
+                voluptatem quis provident, veritatis, molestiae molestias dolor odio animi! Culpa praesentium voluptatum
+                nam? Temporibus cumque veritatis aut necessitatibus maiores maxime consequatur porro illum vitae ut,
+                esse dolorum ex quae cupiditate, perferendis id atque, facilis voluptas molestiae nesciunt. Architecto
+                assumenda dolores perferendis, debitis quisquam molestias quod porro neque numquam totam animi? Nihil
+                deleniti dolorum perspiciatis voluptatum, tempora illo voluptates, quam, voluptate optio reprehenderit
+                dolor impedit illum nam odit vel modi ad. Nobis error, nemo voluptates laudantium iure sunt aperiam
+                doloremque nulla dolor, at porro neque? Consectetur quis voluptatibus saepe?</p>
+        </div>
+        <div class="clr"></div>
+
+        <div id="floating-element">
+            <h1>Floating Element</h1>
+        </div>
+        <div id="main-block">
+            <h1>Headline</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sed repudiandae aspernatur,
+                voluptatem quis provident, veritatis, molestiae molestias dolor odio animi! Culpa praesentium
+                voluptatum
+                nam? Temporibus cumque veritatis aut necessitatibus maiores maxime consequatur porro illum vitae ut,
+                esse dolorum ex quae cupiditate, perferendis id atque, facilis voluptas molestiae nesciunt.
+                Architecto
+                assumenda dolores perferendis, debitis quisquam molestias quod porro neque numquam totam animi?
+                Nihil
+                deleniti dolorum perspiciatis voluptatum, tempora illo voluptates, quam, voluptate optio
+                reprehenderit
+                dolor impedit illum nam odit vel modi ad. Nobis error, nemo voluptates laudantium iure sunt aperiam
+                doloremque nulla dolor, at porro neque? Consectetur quis voluptatibus saepe?</p>
+        </div>
+        <div id="sidebar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sed repudiandae aspernatur,
+                voluptatem quis provident, veritatis, molestiae molestias dolor odio animi! Culpa praesentium
+                voluptatum
+                nam? Temporibus cumque veritatis aut necessitatibus maiores maxime consequatur porro illum vitae ut,
+                esse dolorum ex quae cupiditate, perferendis id atque, facilis voluptas molestiae nesciunt.</p>
+        </div>
+
+
+        <div class="clr"></div>
+        <div class="p-box">
+            <h1>Hello</h1>
+            <h2>Developers</h2>
+        </div>
+
+        <ul class="my-list">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+    </div>
+
+    <!-- Outside of container class -->
+
+    <a class="button fix-me" href="">Button</a>
+</body>
+
+</html>
